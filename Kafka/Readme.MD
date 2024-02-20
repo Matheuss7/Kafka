@@ -30,3 +30,17 @@ Altere sempre o termo "my-cluster" para o nome do seu cluster.
 Altere sempre o nome do "my-topic" para o nome do seu tópico.
 
 Efetuar o git desse repositório.
+
+
+Para iniciar o Terraform:
+
+1. Acesse a pasta Kafka.
+2. Rode o comando `terraform init`.
+3. Execute `terraform plan`.
+4. Utilize `terraform apply` e digite `yes` quando solicitado.
+
+Para efetuar a limpeza após rodar um `terraform destroy`, execute também:
+
+```bash
+kubectl delete -f modules/strimzi/manifests/031-RoleBinding-strimzi-cluster-operator-entity-operator-delegation.yaml -n application
+kubectl delete -f modules/strimzi/manifests/ -n strimzi
