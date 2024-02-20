@@ -11,13 +11,13 @@
 Rodar o comando abaixo para alterar o valor de `namespace` para todos os arquivos com o nome `RoleBinding`:
 
 - **Linux**:
-
+```bash
 sed -i 's/namespace: .*/namespace: kafka/' install/cluster-operator/*RoleBinding*.yaml
-
+```
 - **MAC**:
-
+```bash
 sed -i '' 's/namespace: .*/namespace: kafka/' install/cluster-operator/*RoleBinding*.yaml
-
+```
 
 Exemplos de Configuração:
 [Exemplo de Configuração do Tópico Kafka](https://github.com/strimzi/strimzi-kafka-operator/blob/main/examples/topic/kafka-topic.yaml)
