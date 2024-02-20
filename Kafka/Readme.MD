@@ -39,7 +39,7 @@ Para iniciar o Terraform:
 3. Execute `terraform plan`.
 4. Utilize `terraform apply` e digite `yes` quando solicitado.
 
-Para efetuar a limpeza após rodar um `terraform destroy`, execute também:
+Para efetuar a limpeza rode o comando `terraform destroy` após rodar o comando `terraform destroy`, execute também:
 
 ```bash
 kubectl delete -f modules/strimzi/manifests/031-RoleBinding-strimzi-cluster-operator-entity-operator-delegation.yaml -n application
