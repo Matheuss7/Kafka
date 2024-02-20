@@ -26,7 +26,9 @@ Exemplos de Configuração:
 [Exemplo de Configuração do Kafka Ephemeral](https://github.com/strimzi/strimzi-kafka-operator/blob/main/examples/kafka/kafka-ephemeral.yaml)
 
 Dicas:
+
 Altere sempre o termo "my-cluster" para o nome do seu cluster.
+
 Altere sempre o nome do "my-topic" para o nome do seu tópico.
 
 Efetuar o git desse repositório.
