@@ -15,6 +15,7 @@ Rodar o comando abaixo para alterar o valor de `namespace` para todos os arquivo
 sed -i 's/namespace: .*/namespace: kafka/' install/cluster-operator/*RoleBinding*.yaml
 
 - **MAC**:
+
 sed -i '' 's/namespace: .*/namespace: kafka/' install/cluster-operator/*RoleBinding*.yaml
 
 
