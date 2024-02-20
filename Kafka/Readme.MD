@@ -20,7 +20,9 @@ sed -i '' 's/namespace: .*/namespace: kafka/' install/cluster-operator/*RoleBind
 ```
 
 Exemplos de Configuração:
+
 [Exemplo de Configuração do Tópico Kafka](https://github.com/strimzi/strimzi-kafka-operator/blob/main/examples/topic/kafka-topic.yaml)
+
 [Exemplo de Configuração do Kafka Ephemeral](https://github.com/strimzi/strimzi-kafka-operator/blob/main/examples/kafka/kafka-ephemeral.yaml)
 
 Dicas:
