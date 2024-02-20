@@ -1,3 +1,3 @@
 ## K8s-Context ##
-context = "gke_umbrella-mi_us-central1_umbrella-cluster"
+context = "arn:aws:eks:sa-east-1:368491468322:cluster/vizi-rancher"
 
