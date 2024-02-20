@@ -1,9 +1,9 @@
 apiVersion: kafka.strimzi.io/v1beta2
 kind: KafkaTopic
 metadata:
-  name: app-topic
+  name: umbrella-topic-1
   labels:
-    strimzi.io/cluster: "my-cluster"
+    strimzi.io/cluster: "umbrella-cluster"
 spec:
   partitions: 3
   replicas: 1
