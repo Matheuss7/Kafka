@@ -8,12 +8,12 @@ module "strimzi_ns" {
   source = "./modules/strimzi"
 }
 
-#Namespace para deploy do cluster operator
-#resource "kubernetes_namespace" "kafka_cluster" {
-#    metadata {
-#      name = "production"
-#    }
-#}
+
+resource "kubernetes_namespace" "namespace_application" {
+  metadata {
+    name = "application"
+  }
+}
 
 //Passando o recurso role_binding que consegue criar todas as roles, recurso proprio do kubernetes
 resource "kubernetes_role_binding" "strimzi_cluster_operator" {

@@ -19,15 +19,3 @@ resource "google_container_cluster" "my_cluster" {
 provider "kubernetes" {
   config_path = "~/.kube/config" # Substitua pelo caminho para o seu arquivo kubeconfig
 }
-
-resource "kubernetes_namespace" "strimzi_namespace" {
-  metadata {
-    name = "strimzi" # Nome do namespace que você quer criar
-  }
-}
-
-resource "kubernetes_namespace" "kafka_namespace" {
-  metadata {
-    name = "kafka" # Nome do namespace que você quer criar
-  }
-}

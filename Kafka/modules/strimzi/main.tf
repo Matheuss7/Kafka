@@ -1,6 +1,6 @@
 #Namespace para deploy do cluster operator
-resource "kubernetes_namespace" "strimzi" {
-    metadata {
-      name = "strimzi"
-    }
+resource "kubernetes_namespace" "namespace_strimzi" {
+  metadata {
+    name = "strimzi"
+  }
 }
