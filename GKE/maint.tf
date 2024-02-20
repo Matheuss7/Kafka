@@ -1,5 +1,5 @@
 provider "google" {
-  credentials = file("~/Documents/Matheus/teste/GKE/umbrella-mi-754d113fc5e6.json")
+  credentials = file("~/Documents/Matheus/teste/gke-kafka/GKE/umbrella-mi-754d113fc5e6.json")
   project     = "umbrella-mi"
   region      = "us-central1"
 }
@@ -20,8 +20,14 @@ provider "kubernetes" {
   config_path = "~/.kube/config" # Substitua pelo caminho para o seu arquivo kubeconfig
 }
 
-resource "kubernetes_namespace" "kafka" {
+resource "kubernetes_namespace" "strimzi_namespace" {
   metadata {
     name = "strimzi" # Nome do namespace que você quer criar
+  }
+}
+
+resource "kubernetes_namespace" "kafka_namespace" {
+  metadata {
+    name = "kafka" # Nome do namespace que você quer criar
   }
 }
